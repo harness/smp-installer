@@ -13,11 +13,13 @@ data "aws_vpc" "vpc" {
 resource "random_string" "suffix" {
   length  = 4
   special = false
+  lower = true
 }
 
 resource "random_string" "prefix" {
   length  = 2
   special = false
+  lower = true
 }
 
 locals {
