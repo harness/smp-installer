@@ -28,6 +28,7 @@ Installer for Harness SMP
 
 ## Pre-requisites
 1. Make sure you have `tofu` installed. You can check (official documentation)[https://opentofu.org/docs/intro/install/] on how to install opentofu.
+2. Ensure jq is installed and is in path.
 
 ## Run
 1. Clone this repository
@@ -35,6 +36,7 @@ Installer for Harness SMP
   ```
   go build -o smp-installer github.com/harness/smp-installer/cmd
   ```
+  Note: Any changes to .tf files should follow with build of above binary.
 3. Use the example.yaml as your configuration reference for the tool
    - Update the necessary fields as required
 5. Authenticate with AWS
